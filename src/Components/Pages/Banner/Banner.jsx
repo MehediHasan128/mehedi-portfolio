@@ -10,7 +10,7 @@ const Banner = () => {
     <>
       <div
         id="home"
-        className="bg-[#1b1b1b] flex justify-center items-center py-36 lg:pt-64 lg:pb-24"
+        className="bg-[#1b1b1b] flex justify-center items-center py-36 lg:pt-64 lg:pb-32"
       >
         <Container>
           {/* MAin Container */}
@@ -40,6 +40,11 @@ const Banner = () => {
                     delaySpeed={50}
                   />
                 </span>
+              </Typography>
+              <Typography variant="subtitle1">
+              <p className="mt-5 text-gray-400 text-justify">
+              Hi, I'm Mehedi Hasan, a MERN Stack Developer passionate about building seamless web solutions. With a keen eye for detail and a love for clean code, I transform ideas into digital experiences. Let's connect and create something extraordinary together!
+              </p>
               </Typography>
 
               {/* Button Section */}
@@ -78,5 +83,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-// #2d435a
