@@ -19,6 +19,10 @@ const pages = [
     id: "about",
     navItem: 'About'
   },
+  {
+    id: "services",
+    navItem: 'Services'
+  },
 ];
 
 function Navbar() {

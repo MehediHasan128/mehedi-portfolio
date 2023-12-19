@@ -31,7 +31,7 @@ const About = () => {
                                 Hello! I’m Mehedi Hasan Bayzid, a MERN Stack developer. I’m also studying at Uttara University Department of Computer Science and Engineering. Web development is a passion for me. Since last one year I have gained a lot of skill in this web development sector which has helped me a lot to create some projects.
                                 </p>
                             </Typography>
-                            <Box className="mt-10 grid grid-cols-2 gap-y-5">
+                            <Box className="mt-10 grid lg:grid-cols-2 gap-y-5">
                                 <div className="flex items-center gap-3">
                                     <MdEmail className="text-2xl text-[#df4018]" />
                                     <Typography variant="body1">
@@ -57,7 +57,7 @@ const About = () => {
                                     </Typography>
                                 </div>
                             </Box>
-                            <Box className="mt-20">
+                            <Box className="mt-10 lg:mt-20">
                                 <Button className={'hover:text-black'} sx={{backgroundColor: 'black', color: 'white', padding: '10px 15px', borderRadius: '10px'}} href="https://github.com/MehediHasan128" target="_blank">
                                     <Typography className="flex items-center gap-2" variant="h6">
                                         GitHub
