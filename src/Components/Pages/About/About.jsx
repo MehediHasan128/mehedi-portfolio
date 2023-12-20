@@ -10,7 +10,7 @@ import { FaLocationDot, FaGithub } from "react-icons/fa6";
 
 const About = () => {
     return (
-        <div id="about">
+        <div id="about" className="py-20 relative lg:bottom-20">
             <Container>
                 <Box className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20">
                     <Box>

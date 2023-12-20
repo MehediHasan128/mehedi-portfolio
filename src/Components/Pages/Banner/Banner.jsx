@@ -10,7 +10,7 @@ const Banner = () => {
     <>
       <div
         id="home"
-        className="bg-[#1b1b1b] flex justify-center items-center py-36 lg:pt-64 lg:pb-32"
+        className="bg-[#1b1b1b] flex justify-center items-center py-24 lg:pt-64 lg:pb-32"
       >
         <Container>
           {/* MAin Container */}
