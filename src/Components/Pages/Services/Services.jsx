@@ -6,22 +6,28 @@ import optimize from "../../../assets/icons/optimization.svg";
 
 const Services = () => {
   return (
-    <div className="bg-slate-100 py-20 lg:py-32 mt-20 lg:mt-0" id="services">
+    <div className="bg-slate-50" id="services">
+      <Box className="bg-[#1b1b1b] pt-20 pb-64 px-5 text-white">
+        <Typography variant="h3">
+          <p className="font-bold border-l-8 border-red-400 pl-5 w-fit mx-auto">
+            My{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df4018] to-[#af3db8]">
+              Skills
+            </span>
+          </p>
+        </Typography>
+        <Typography variant="body1">
+          <p className="text-justify lg:text-center mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+            voluptates doloribus. Ea, necessitatibus labore!
+          </p>
+        </Typography>
+      </Box>
       <Container>
-        <Box>
-          <Typography variant="h3">
-            <p className="font-bold border-l-8 border-red-400 pl-5 w-fit mx-auto">
-              My{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df4018] to-[#af3db8]">
-                Services
-              </span>
-            </p>
-          </Typography>
-        </Box>
 
         {/* Services Container */}
-        <Box className="mt-20">
-          <Box className="grid lg:grid-cols-3 gap-5">
+        <Box className="relative bottom-48">
+          <Box className="grid md:flex md:flex-wrap md:gap-y-14 lg:grid-cols-3 gap-5">
             <Box className="bg-white shadow-md w-80 mx-auto p-5 rounded-md border">
               <div>
                 <img className="w-36 mx-auto" src={react} alt="" />

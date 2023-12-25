@@ -64,8 +64,8 @@ const Banner = () => {
             </Box>
 
             {/* Image container */}
-            <Box className="w-[70%] lg:w-[30%]">
-              <div className="bg-white h-[330px] lg:h-[420px] pt-5 rounded-3xl border overflow-hidden">
+            <Box className="w-[70%] md:w-[50%] lg:w-[30%]">
+              <div className="bg-white h-[330px] md:h-[400px] lg:h-[420px] pt-5 rounded-3xl border overflow-hidden">
                 <img src={bannerImg} alt="" />
               </div>
             </Box>

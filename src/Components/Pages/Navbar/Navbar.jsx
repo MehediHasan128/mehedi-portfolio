@@ -27,6 +27,14 @@ const pages = [
     id: "skills",
     navItem: 'Skills'
   },
+  {
+    id: "projects",
+    navItem: 'Projects'
+  },
+  {
+    id: "resume",
+    navItem: 'Resume'
+  },
 ];
 
 function Navbar() {

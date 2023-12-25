@@ -14,7 +14,7 @@ const About = () => {
             <Container>
                 <Box className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20">
                     <Box>
-                        <div className="bg-slate-100 w-64 mx-auto h-64 lg:w-96 lg:mx-0 lg:h-96 rounded-full overflow-hidden">
+                        <div className="bg-slate-100 w-64 mx-auto h-64 md:w-96 lg:mx-0 md:h-96 rounded-full overflow-hidden">
                             <img src={img} alt="mehedi'sImage" />
                         </div>
                     </Box>
