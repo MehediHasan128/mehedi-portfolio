@@ -5,6 +5,8 @@ import { RouterProvider } from 'react-router-dom'
 import router from './Components/Router/Route.jsx'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react'
+import 'swiper/css';
+import 'swiper/css/pagination';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
