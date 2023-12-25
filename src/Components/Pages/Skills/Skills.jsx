@@ -20,7 +20,7 @@ const Skills = () => {
             <p className="text-justify lg:text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptates doloribus. Ea, necessitatibus labore! Culpa at dolorum exercitationem expedita consectetur, suscipit voluptatem</p>
           </Typography>
         </Box>
-        <Box className="mt-10 lg:mt-20 grid lg:grid-cols-3 gap-10 md:w-[80%] lg:w-auto md:mx-auto">
+        <Box className="mt-10 lg:mt-20 grid lg:grid-cols-3 gap-10 w-[80%] lg:w-auto mx-auto">
             <Box>
                 <Typography variant="h5">
                     <p className="font-semibold border-l-4 pl-3 border-[#df4018] w-fit text-transparent bg-clip-text bg-gradient-to-r from-[#df4018] to-[#af3db8]">Frontend</p>

@@ -16,7 +16,7 @@ import { Pagination } from "swiper/modules";
 const Projects = () => {
   return (
     <div id="projects">
-      <Box className="bg-[#1b1b1b] pt-10 lg:pt-20 pb-48 px-5 text-white">
+      <Box className="bg-[#1b1b1b] pt-10 lg:pt-20 pb-36 px-5 text-white">
         <Typography variant="h3">
           <p className="font-bold border-l-8 border-red-400 pl-5 w-fit mx-auto">
             My{" "}

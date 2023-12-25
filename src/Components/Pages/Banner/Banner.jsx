@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import { Typewriter } from "react-simple-typewriter";
 import bannerImg from "../../../assets/BannerImage/IMG_6261.jpg";
+import {motion} from "framer-motion"
 
 // React Icons
 import { MdDownloading } from "react-icons/md";
@@ -16,7 +17,15 @@ const Banner = () => {
           {/* MAin Container */}
           <Box className="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 lg:gap-20">
             {/* Text Container */}
-            <Box className="lg:w-[70%] text-white">
+            <motion.Box
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+            className="lg:w-[70%] text-white">
               {/* Typogrphy Section */}
               <Typography variant="h6">
                 <p>Hi, There!</p>
@@ -49,25 +58,48 @@ const Banner = () => {
 
               {/* Button Section */}
               <Box className="mt-10 flex items-center gap-6">
-                <button className="bg-gradient-to-r from-[#be4627] to-[#79377e] px-5 py-2 rounded-lg hover:scale-105 duration-500">
+                <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="bg-gradient-to-r from-[#be4627] to-[#79377e] px-5 py-2 rounded-lg"
+                >
                   <Typography variant="h6" className="flex items-center gap-2">
                     Resume
                     <MdDownloading className="text-2xl" />
                   </Typography>
-                </button>
-                <button className="border-2 border-[#be4627] px-5 py-2 rounded-lg hover:scale-105 duration-500">
+                </motion.button>
+                <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="border-2 border-[#be4627] px-5 py-2 rounded-lg"
+                >
                   <Typography variant="h6" className="flex items-center gap-2">
                     Touch Me
                   </Typography>
-                </button>
+                </motion.button>
               </Box>
-            </Box>
+            </motion.Box>
 
             {/* Image container */}
-            <Box className="w-[70%] md:w-[50%] lg:w-[30%]">
-              <div className="bg-white h-[330px] md:h-[400px] lg:h-[420px] pt-5 rounded-3xl border overflow-hidden">
+            <Box className="w-[70%] md:w-[45%] lg:w-[30%]">
+              <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+                scale: {
+                  type: "spring",
+                  damping: 5,
+                  stiffness: 100,
+                  restDelta: 0.001
+                }
+              }}
+              className="box bg-white h-[330px] md:h-[400px] lg:h-[420px] pt-5 rounded-3xl border overflow-hidden">
                 <img src={bannerImg} alt="" />
-              </div>
+              </motion.div>
             </Box>
           </Box>
         </Container>
