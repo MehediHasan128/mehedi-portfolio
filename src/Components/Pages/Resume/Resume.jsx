@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 const Resume = () => {
   return (
     <div className="bg-slate-50 py-20" id="resume">
-      <Box className="mb-20">
+      <Box className="mb-20 px-10">
         <Typography variant="h3">
           <p className="font-bold border-l-8 border-red-400 pl-5 w-fit mx-auto">
             My{" "}
@@ -25,6 +25,7 @@ const Resume = () => {
           </p>
         </Typography>
       </Box>
+      <Box className="px-5 lg:px-0">
       <VerticalTimeline lineColor="#CBD4C2">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -96,6 +97,7 @@ const Resume = () => {
           </Box>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      </Box>
     </div>
   );
 };

@@ -103,11 +103,6 @@ function Navbar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
@@ -155,7 +150,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <a href="#contact">
               <button className="bg-gradient-to-r from-[#df4018] to-[#af3db8] p-[2px] rounded-lg">
-                <p className="px-5 py-2 rounded-lg bg-[#1b1b1b] hover:bg-gradient-to-r from-[#df4018] to-[#af3db8] duration-700">
+                <p className="p-2 lg:px-5 lg:py-2 rounded-lg bg-[#1b1b1b] hover:bg-gradient-to-r from-[#df4018] to-[#af3db8] duration-700">
                   Conatact Me
                 </p>
               </button>
