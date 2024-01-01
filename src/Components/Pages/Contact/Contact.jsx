@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="bg-[#1b1b1b] py-20" id="contact">
       <Container>
-        <Box className="flex flex-col lg:flex-row justify-between items-center lg:gap-36">
+        <Box className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-36">
           <Box className="text-white">
             <Box>
               <Typography variant="h3">
@@ -52,23 +52,23 @@ const Contact = () => {
             <Box className="mt-14 flex gap-5">
               <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
                 <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaFacebookF className="text-3xl" />
+                  <FaFacebookF className="text-xl" />
                 </div>
               </div>
               <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
                 <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaGithub className="text-3xl" />
+                  <FaGithub className="text-xl" />
                 </div>
               </div>
               <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
                 <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaLinkedin className="text-3xl" />
+                  <FaLinkedin className="text-xl" />
                 </div>
               </div>
             </Box>
           </Box>
-          <Box className="flex-1">
-            <form className="w-[100%] mx-auto space-y-3">
+          <Box className="w-[100%] lg:flex-1">
+            <form className="lg:w-[100%] mx-auto space-y-3">
               <Box>
                 <label className="text-white">
                   <Typography variant="h6">
