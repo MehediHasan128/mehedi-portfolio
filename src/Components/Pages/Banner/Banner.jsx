@@ -84,6 +84,7 @@ const Banner = () => {
 
             {/* Image container */}
             <Box className="w-[70%] md:w-[45%] lg:w-[30%]">
+              <Box>
               <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -100,6 +101,7 @@ const Banner = () => {
               className="box bg-white h-[330px] md:h-[400px] lg:h-[420px] pt-5 rounded-3xl border overflow-hidden">
                 <img src={bannerImg} alt="" />
               </motion.div>
+              </Box>
             </Box>
           </Box>
         </Container>

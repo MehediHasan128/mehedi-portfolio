@@ -36,13 +36,13 @@ const Resume = () => {
         >
           <Box className='text-white'>
           <Typography variant="h5" className="vertical-timeline-element-title">
-          Higher Secondary School Certificate
+          Bachelor{"'"}s Degree
           </Typography>
           <Typography
             variant="h6"
             className="vertical-timeline-element-subtitle"
           >
-            Uttara High School and College
+            Uttara University
           </Typography>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit autem, eaque error unde distinctio eum!
@@ -59,7 +59,7 @@ const Resume = () => {
         >
           <Box className='text-white'>
           <Typography variant="h5" className="vertical-timeline-element-title">
-          Secondary School Certificate
+          Higher Secondary School Certificate 
           </Typography>
           <Typography
             variant="h6"
@@ -76,19 +76,19 @@ const Resume = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "linear-gradient(to right, #df4018, #af3db8)", color: "" }}
           contentArrowStyle={{ borderRight: "7px solid  #af3db8" }}
-          date="September 2022 - present"
+          date="January 2012 - February 2018"
           iconStyle={{ background: "#af3db8", color: "#fff" }}
           icon={<FaGraduationCap />}
         >
           <Box className='text-white'>
           <Typography variant="h5" className="vertical-timeline-element-title">
-            Bachelor{"'"}s Degree
+          Secondary School Certificate
           </Typography>
           <Typography
             variant="h6"
             className="vertical-timeline-element-subtitle"
           >
-            Uttara University
+            Uttara High School and College
           </Typography>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit autem, eaque error unde distinctio eum!

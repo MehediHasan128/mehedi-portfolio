@@ -9,7 +9,7 @@ const ProjectCard = (items) => {
     return (
         <>
             <Box className="mb-10">
-            <div className="bg-gradient-to-r from-[#df4018] to-[#af3db8] px-3 pt-3 rounded-t-lg">
+            <div className="bg-gradient-to-r from-[#df4018] to-[#af3db8] px-2 pt-2 rounded-t-lg">
               <div className="overflow-hidden">
                 <img
                   className="rounded-t-lg hover:scale-125 duration-700"
