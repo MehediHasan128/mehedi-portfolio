@@ -28,12 +28,59 @@ const Resume = () => {
       <VerticalTimeline lineColor="#CBD4C2">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#E0E2DB", color: "" }}
-          contentArrowStyle={{ borderRight: "7px solid  #E0E2DB" }}
+          contentStyle={{ background: "linear-gradient(to right, #df4018, #af3db8)", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid  #af3db8" }}
           date="September 2022 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          iconStyle={{ background: "#af3db8", color: "#fff" }}
           icon={<FaGraduationCap />}
         >
+          <Box className='text-white'>
+          <Typography variant="h5" className="vertical-timeline-element-title">
+          Higher Secondary School Certificate
+          </Typography>
+          <Typography
+            variant="h6"
+            className="vertical-timeline-element-subtitle"
+          >
+            Uttara High School and College
+          </Typography>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit autem, eaque error unde distinctio eum!
+          </p>
+          </Box>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "linear-gradient(to right, #df4018, #af3db8)", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid  #df4018" }}
+          date="July 2018 - April 2020"
+          iconStyle={{ background: "#df4018", color: "#fff" }}
+          icon={<FaGraduationCap />}
+        >
+          <Box className='text-white'>
+          <Typography variant="h5" className="vertical-timeline-element-title">
+          Secondary School Certificate
+          </Typography>
+          <Typography
+            variant="h6"
+            className="vertical-timeline-element-subtitle"
+          >
+            Uttara High School and College
+          </Typography>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit autem, eaque error unde distinctio eum!
+          </p>
+          </Box>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "linear-gradient(to right, #df4018, #af3db8)", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid  #af3db8" }}
+          date="September 2022 - present"
+          iconStyle={{ background: "#af3db8", color: "#fff" }}
+          icon={<FaGraduationCap />}
+        >
+          <Box className='text-white'>
           <Typography variant="h5" className="vertical-timeline-element-title">
             Bachelor{"'"}s Degree
           </Typography>
@@ -44,53 +91,9 @@ const Resume = () => {
             Uttara University
           </Typography>
           <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit autem, eaque error unde distinctio eum!
           </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#E0E2DB", color: "" }}
-          contentArrowStyle={{ borderRight: "7px solid  #E0E2DB" }}
-          date="July 2018 - April 2020"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaGraduationCap />}
-        >
-          <Typography variant="h5" className="vertical-timeline-element-title">
-            Higher Secondary School Certificate
-          </Typography>
-          <Typography
-            variant="h6"
-            className="vertical-timeline-element-subtitle"
-          >
-            Uttara High School and College
-          </Typography>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#E0E2DB", color: "" }}
-          contentArrowStyle={{ borderRight: "7px solid  #E0E2DB" }}
-          date="January 2012 - February 2018"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaGraduationCap />}
-        >
-          <Typography variant="h5" className="vertical-timeline-element-title">
-            Secondary School Certificate
-          </Typography>
-          <Typography
-            variant="h6"
-            className="vertical-timeline-element-subtitle"
-          >
-            Uttara High School and College
-          </Typography>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
+          </Box>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
