@@ -57,12 +57,12 @@ const Contact = () => {
               </div>
               <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
                 <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaGithub className="text-3xl" />
+                  <FaGithub className="text-xl" />
                 </div>
               </div>
               <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
                 <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaLinkedin className="text-3xl" />
+                  <FaLinkedin className="text-xl" />
                 </div>
               </div>
             </Box>

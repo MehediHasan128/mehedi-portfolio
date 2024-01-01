@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import logo from "../../../assets/logo.png";
 
 const pages = [
   {
@@ -55,24 +56,12 @@ function Navbar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
+          <Box className="hidden lg:flex items-center gap-3">
+              <img className="w-16 py-2" src={logo} alt="" />
+              <Typography variant="h5">
+                <p className="font-semibold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df4018] to-[#af3db8]">Mehedi</span>Script</p>
+              </Typography>
+          </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -112,25 +101,12 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
+          <Box className="flex lg:hidden items-center gap-2 mr-10">
+              <img className="w-10 py-2" src={logo} alt="" />
+              <Typography variant="body1">
+              <p className="font-semibold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df4018] to-[#af3db8]">Mehedi</span>Script</p>
+              </Typography>
+          </Box>
           <Box
             sx={{
               flexGrow: 1,
@@ -151,7 +127,7 @@ function Navbar() {
             <a href="#contact">
               <button className="bg-gradient-to-r from-[#df4018] to-[#af3db8] p-[2px] rounded-lg">
                 <p className="p-2 lg:px-5 lg:py-2 rounded-lg bg-[#1b1b1b] hover:bg-gradient-to-r from-[#df4018] to-[#af3db8] duration-700">
-                  Conatact Me
+                  Contact Me
                 </p>
               </button>
             </a>
