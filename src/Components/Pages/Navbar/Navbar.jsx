@@ -1,39 +1,39 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import MenuItem from "@mui/material/MenuItem";
+import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = [
   {
     id: "home",
-    navItem: 'Home'
+    navItem: "Home",
   },
   {
     id: "about",
-    navItem: 'About'
+    navItem: "About",
   },
   {
     id: "services",
-    navItem: 'Services'
+    navItem: "Services",
   },
   {
     id: "skills",
-    navItem: 'Skills'
+    navItem: "Skills",
   },
   {
     id: "projects",
-    navItem: 'Projects'
+    navItem: "Projects",
   },
   {
     id: "resume",
-    navItem: 'Resume'
+    navItem: "Resume",
   },
 ];
 
@@ -48,12 +48,14 @@ function Navbar() {
     setAnchorElNav(null);
   };
 
-
   return (
-    <AppBar sx={{backgroundColor: '#1b1b1b'}} position="fixed">
+    <AppBar
+      sx={{ backgroundColor: "#1b1b1b", padding: "10px 0" }}
+      position="fixed"
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -61,18 +63,18 @@ function Navbar() {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
             LOGO
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -87,18 +89,18 @@ function Navbar() {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {/* {pages.map((page) => (
@@ -106,19 +108,16 @@ function Navbar() {
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))} */}
-              {
-                pages.map(page => 
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <a href={`#${page.id}`}>
-                    {page.navItem}
-                    </a>
+                    <a href={`#${page.id}`}>{page.navItem}</a>
                   </Typography>
-                  </MenuItem>)
-              }
+                </MenuItem>
+              ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -126,31 +125,41 @@ function Navbar() {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, justifyContent: 'center', display: { xs: 'none', md: 'flex' } }}>
-            {
-              pages.map(page => <>
-                <a className='text-lg font-medium mx-3' href={`#${page.id}`}>
-                {page.navItem}
+          <Box
+            sx={{
+              flexGrow: 1,
+              justifyContent: "center",
+              display: { xs: "none", md: "flex" },
+            }}
+          >
+            {pages.map((page) => (
+              <>
+                <a className="text-lg font-medium mx-3" href={`#${page.id}`}>
+                  {page.navItem}
                 </a>
-              </>)
-            }
+              </>
+            ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <button>
-              Conatact Me
-            </button>
+            <a href="#contact">
+              <button className="bg-gradient-to-r from-[#df4018] to-[#af3db8] p-[2px] rounded-lg">
+                <p className="px-5 py-2 rounded-lg bg-[#1b1b1b] hover:bg-gradient-to-r from-[#df4018] to-[#af3db8] duration-700">
+                  Conatact Me
+                </p>
+              </button>
+            </a>
           </Box>
         </Toolbar>
       </Container>

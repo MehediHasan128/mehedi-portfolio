@@ -2,6 +2,7 @@ import { Box, Container, Typography } from "@mui/material";
 import { Typewriter } from "react-simple-typewriter";
 import bannerImg from "../../../assets/BannerImage/IMG_6261.jpg";
 import {motion} from "framer-motion"
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 // React Icons
 import { MdDownloading } from "react-icons/md";
@@ -32,32 +33,57 @@ const Banner = () => {
               </Typography>
               <Typography variant="h1">
                 <p className="font-extrabold">
-                  I'm{" "}
+                  I{"'"}m{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#e95834] to-[#d37cda]">
                     Mehedi Hasan
                   </span>
                 </p>
               </Typography>
               <Typography variant="h4">
-                I'm a
+                I{"'"}m 
                 <span>
                   <Typewriter
-                    words={[" MERN Stact Developer"]}
+                    words={[" Mehedi Hasan Bayzid", " a React Developer"]}
                     cursor
                     loop
                     typeSpeed={100}
-                    delaySpeed={50}
+                    delaySpeed={1000}
                   />
                 </span>
               </Typography>
               <Typography variant="subtitle1">
               <p className="mt-5 text-gray-400 text-justify">
-              Hi, I'm Mehedi Hasan, a MERN Stack Developer passionate about building seamless web solutions. With a keen eye for detail and a love for clean code, I transform ideas into digital experiences. Let's connect and create something extraordinary together!
+              Hi, I{"'"}m Mehedi Hasan, a MERN Stack Developer passionate about building seamless web solutions. With a keen eye for detail and a love for clean code, I transform ideas into digital experiences. Let{"'"}s connect and create something extraordinary together!
               </p>
               </Typography>
 
+              {/* Social Icon */}
+              <Box className="my-10 flex gap-5">
+                <a href="#">
+                <Box className="bg-gradient-to-r from-[#e95834] to-[#d37cda] w-fit rounded-full p-[2px] hover:-translate-y-2 duration-700">
+                  <Box className="bg-[#1b1b1b] p-2 rounded-full">
+                  <FaFacebookF />
+                  </Box>
+                </Box>
+                </a>
+                <a href="#">
+                <Box className="bg-gradient-to-r from-[#e95834] to-[#d37cda] w-fit rounded-full p-[2px] hover:-translate-y-2 duration-700">
+                  <Box className="bg-[#1b1b1b] p-2 rounded-full">
+                  <FaInstagram />
+                  </Box>
+                </Box>
+                </a>
+                <a href="#">
+                <Box className="bg-gradient-to-r from-[#e95834] to-[#d37cda] w-fit rounded-full p-[2px] hover:-translate-y-2 duration-700">
+                  <Box className="bg-[#1b1b1b] p-2 rounded-full">
+                  <FaLinkedinIn />
+                  </Box>
+                </Box>
+                </a>
+              </Box>
+
               {/* Button Section */}
-              <Box className="mt-10 flex items-center gap-6">
+              <Box className="flex items-center gap-6">
                 <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -69,6 +95,7 @@ const Banner = () => {
                     <MdDownloading className="text-2xl" />
                   </Typography>
                 </motion.button>
+                <a href="#contact">
                 <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -79,6 +106,7 @@ const Banner = () => {
                     Touch Me
                   </Typography>
                 </motion.button>
+                </a>
               </Box>
             </motion.Box>
 
