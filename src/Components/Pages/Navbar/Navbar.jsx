@@ -8,7 +8,6 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import logo from "../../../assets/logo.png";
 
 const pages = [
@@ -101,7 +100,7 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
-          <Box className="flex lg:hidden items-center gap-2 mr-10">
+          <Box className="flex lg:hidden items-center gap-2 w-[50%]">
               <img className="w-10 py-2" src={logo} alt="" />
               <Typography variant="body1">
               <p className="font-semibold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df4018] to-[#af3db8]">Mehedi</span>Script</p>

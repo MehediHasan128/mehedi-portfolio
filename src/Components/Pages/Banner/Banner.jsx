@@ -7,7 +7,10 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 // React Icons
 import { MdDownloading } from "react-icons/md";
 
+import resume from '../../../../public/resumeOfMehedi.pdf';
+
 const Banner = () => {
+
   return (
     <>
       <div
@@ -59,21 +62,21 @@ const Banner = () => {
 
               {/* Social Icon */}
               <Box className="my-10 flex gap-5">
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100090680997623" target="_blank" rel="noopener noreferrer">
                 <Box className="bg-gradient-to-r from-[#e95834] to-[#d37cda] w-fit rounded-full p-[2px] hover:-translate-y-2 duration-700">
                   <Box className="bg-[#1b1b1b] p-2 rounded-full">
                   <FaFacebookF />
                   </Box>
                 </Box>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/b_a_yz_i_d/?fbclid=IwAR2QJ1WIL_jUYdADUpenqPnV5cZNS0wpDE3y_SI0qRyYSbscaWNEiUkPTa4" target="_blank" rel="noopener noreferrer">
                 <Box className="bg-gradient-to-r from-[#e95834] to-[#d37cda] w-fit rounded-full p-[2px] hover:-translate-y-2 duration-700">
                   <Box className="bg-[#1b1b1b] p-2 rounded-full">
                   <FaInstagram />
                   </Box>
                 </Box>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/mehedi-hasan-2871992a3/" target="_blank" rel="noopener noreferrer">
                 <Box className="bg-gradient-to-r from-[#e95834] to-[#d37cda] w-fit rounded-full p-[2px] hover:-translate-y-2 duration-700">
                   <Box className="bg-[#1b1b1b] p-2 rounded-full">
                   <FaLinkedinIn />
@@ -84,6 +87,8 @@ const Banner = () => {
 
               {/* Button Section */}
               <Box className="flex items-center gap-6">
+                
+                <a href={resume} download="resumeOfMehedi.pdf">
                 <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -95,6 +100,7 @@ const Banner = () => {
                     <MdDownloading className="text-2xl" />
                   </Typography>
                 </motion.button>
+                </a>
                 <a href="#contact">
                 <motion.button
                 whileHover={{ scale: 1.1 }}

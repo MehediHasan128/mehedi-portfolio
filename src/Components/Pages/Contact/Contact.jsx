@@ -50,21 +50,39 @@ const Contact = () => {
               </Typography>
             </Box>
             <Box className="mt-14 flex gap-5">
-              <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
-                <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaFacebookF className="text-xl" />
+              <a
+                href="https://www.facebook.com/profile.php?id=100090680997623"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
+                  <div className="p-3 bg-[#1b1b1b] rounded-full">
+                    <FaFacebookF className="text-xl" />
+                  </div>
                 </div>
-              </div>
-              <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
-                <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaGithub className="text-xl" />
+              </a>
+              <a
+                href="https://github.com/MehediHasan128"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
+                  <div className="p-3 bg-[#1b1b1b] rounded-full">
+                    <FaGithub className="text-xl" />
+                  </div>
                 </div>
-              </div>
-              <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
-                <div className="p-3 bg-[#1b1b1b] rounded-full">
-                  <FaLinkedin className="text-xl" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mehedi-hasan-2871992a3/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-fit p-[2px] rounded-full bg-gradient-to-r from-[#df4018] to-[#af3db8] hover:-translate-y-2 duration-500 cursor-pointer">
+                  <div className="p-3 bg-[#1b1b1b] rounded-full">
+                    <FaLinkedin className="text-xl" />
+                  </div>
                 </div>
-              </div>
+              </a>
             </Box>
           </Box>
           <Box className="w-[100%] lg:flex-1">
