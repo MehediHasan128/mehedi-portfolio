@@ -12,7 +12,7 @@ const Services = () => {
           <p className="font-bold border-l-8 border-red-400 pl-5 w-fit mx-auto">
             My{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df4018] to-[#af3db8]">
-              Skills
+              Services
             </span>
           </p>
         </Typography>

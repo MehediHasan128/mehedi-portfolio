@@ -3,8 +3,42 @@ import { FaPhoneAlt, FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { RiSendPlaneFill } from "react-icons/ri";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_b6x53gm",
+        "template_s0utpjj",
+        form.current,
+        "D4CHXHb2DGQ7Y0YFe"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          if(result.status == 200){
+            Swal.fire({
+              icon: "success",
+              title: "Message sent",
+              showConfirmButton: false,
+              timer: 1500
+            });
+          }
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="bg-[#1b1b1b] py-20" id="contact">
       <Container>
@@ -86,7 +120,11 @@ const Contact = () => {
             </Box>
           </Box>
           <Box className="w-[100%] lg:flex-1">
-            <form className="lg:w-[100%] mx-auto space-y-3">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="lg:w-[100%] mx-auto space-y-3"
+            >
               <Box>
                 <label className="text-white">
                   <Typography variant="h6">
@@ -94,9 +132,10 @@ const Contact = () => {
                   </Typography>
                 </label>
                 <input
-                  className="px-5 py-3 w-full rounded-lg"
+                  className="px-5 py-3 w-full rounded-lg focus:outline-none"
                   type="text"
                   placeholder="Enter your name"
+                  name="from_name"
                 />
               </Box>
               <Box>
@@ -106,9 +145,10 @@ const Contact = () => {
                   </Typography>
                 </label>
                 <input
-                  className="px-5 py-3 w-full rounded-lg"
+                  className="px-5 py-3 w-full rounded-lg focus:outline-none"
                   type="email"
                   placeholder="Enter your email"
+                  name="from_email"
                 />
               </Box>
               <Box>
@@ -118,10 +158,11 @@ const Contact = () => {
                   </Typography>
                 </label>
                 <textarea
-                  className="px-5 py-3 w-full rounded-lg"
+                  className="px-5 py-3 w-full rounded-lg focus:outline-none"
                   cols="30"
                   rows="5"
                   placeholder="Write a message"
+                  name="message"
                 ></textarea>
               </Box>
 
