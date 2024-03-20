@@ -54,7 +54,7 @@ const Footer = () => {
           <p className="text-center my-16">Follow me on social media</p>
         </Typography>
         <Box className="flex justify-center gap-5">
-          <a href="">
+          <a href="https://www.instagram.com/b_a_yz_i_d/">
             <Typography variant="h5">
               <FaInstagram className="hover:text-[#df4018] hover:-translate-y-2 duration-700" />
             </Typography>
@@ -64,12 +64,12 @@ const Footer = () => {
               <FaDribbble className="hover:text-[#df4018] hover:-translate-y-2 duration-700" />
             </Typography>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/mehedi-hasan-2871992a3/">
             <Typography variant="h5">
               <FaLinkedinIn className="hover:text-[#df4018] hover:-translate-y-2 duration-700" />
             </Typography>
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/profile.php?id=100090680997623">
             <Typography variant="h5">
               <FaFacebookF className="hover:text-[#df4018] hover:-translate-y-2 duration-700" />
             </Typography>
