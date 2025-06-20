@@ -6,7 +6,7 @@ const navItems = ['Home', 'About', 'Skills', 'Projects', 'Education', 'Contact']
 const Navbar = () => {
   return (
     <>
-      <div className="p-10 bg-transparent fixed z-10 w-full">
+      <div className="py-5 fixed w-full bg-[#21252B] z-100">
         <div className="w-[90%] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer">
             <img className="w-10" src={logo} alt="logo" />

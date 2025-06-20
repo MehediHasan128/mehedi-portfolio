@@ -1,6 +1,8 @@
 import { BsFillCursorFill } from "react-icons/bs";
 import banner from "../../assets/images/mehedi.png";
 import { motion } from "framer-motion";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FiGithub, FiMail } from "react-icons/fi";
 
 const Home = () => {
   return (
@@ -69,6 +71,36 @@ const Home = () => {
         >
           MEHEDI PORTFOLIO
         </h1>
+      </motion.div>
+
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeOut",
+          delay: 1,
+        }}
+        className="absolute text-white bottom-0 w-full py-20"
+      >
+        <div className="flex justify-between items-center w-[60%] mx-auto">
+          <div className="flex items-center gap-20">
+            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+              <FaFacebookF />
+            </div>
+            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+              <FaLinkedinIn />
+            </div>
+          </div>
+          <div className="flex items-center gap-20">
+            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+              <FiGithub />
+            </div>
+            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+              <FiMail />
+            </div>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
