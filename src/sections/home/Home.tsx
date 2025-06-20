@@ -67,12 +67,13 @@ const Home = () => {
       >
         <h1
           id="bannerContent"
-          className="text-[300px] font-extrabold text-white"
+          className="text-[300px] font-extrabold text-blue-100"
         >
           MEHEDI PORTFOLIO
         </h1>
       </motion.div>
 
+      {/* Social icon */}
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -85,18 +86,18 @@ const Home = () => {
       >
         <div className="flex justify-between items-center w-[60%] mx-auto">
           <div className="flex items-center gap-20">
-            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+            <div className="border rounded-full w-fit p-3 text-3xl hover:-translate-y-2 duration-1000 cursor-pointer">
               <FaFacebookF />
             </div>
-            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+            <div className="border rounded-full w-fit p-3 text-3xl hover:-translate-y-2 duration-1000 cursor-pointer">
               <FaLinkedinIn />
             </div>
           </div>
           <div className="flex items-center gap-20">
-            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+            <div className="border rounded-full w-fit p-3 text-3xl hover:-translate-y-2 duration-1000 cursor-pointer">
               <FiGithub />
             </div>
-            <div className="border rounded-full w-fit p-3 text-2xl hover:-translate-y-2 duration-1000 cursor-pointer">
+            <div className="border rounded-full w-fit p-3 text-3xl hover:-translate-y-2 duration-1000 cursor-pointer">
               <FiMail />
             </div>
           </div>
