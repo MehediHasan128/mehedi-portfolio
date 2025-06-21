@@ -1,7 +1,7 @@
 const HeaderContent = () => {
   return (
     <div className="text-center pb-10">
-      <h1 className="text-5xl font-bold">
+      <h1 className="text-5xl font-semibold">
         ABOUT ME
       </h1>
       <div className="mt-5 w-[30%] mx-auto flex">

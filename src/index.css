@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 @import "tailwindcss";
 
 
@@ -19,4 +20,7 @@ html {
 }
 #bannerContent{
   font-family: "League Gothic", sans-serif;
+}
+#aboutTitle{
+  font-family: "Bodoni Moda", serif;
 }

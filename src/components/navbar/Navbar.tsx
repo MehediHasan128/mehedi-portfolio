@@ -1,5 +1,6 @@
 import { AiOutlineDownload } from "react-icons/ai";
 import logo from "../../assets/logo/logo.png";
+import Button from "../ui/Button";
 
 const navItems = ['Home', 'About', 'Skills', 'Projects', 'Education', 'Contact']
 
@@ -18,7 +19,7 @@ const Navbar = () => {
             }
           </div>
           <div>
-            <button className="px-5 py-2 rounded-md text-lg bg-blue-100 flex items-center gap-2 cursor-pointer active:scale-95 duration-1000"><AiOutlineDownload className="text-2xl" /> Resume</button>
+            <Button icon={<AiOutlineDownload className="text-2xl" />} btnTitle="Resume" bg="bg-blue-100" />
           </div>
         </div>
       </div>
