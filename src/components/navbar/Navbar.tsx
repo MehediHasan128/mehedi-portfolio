@@ -1,8 +1,14 @@
-import { AiOutlineDownload } from "react-icons/ai";
 import logo from "../../assets/logo/logo.png";
 import Button from "../ui/Button";
 
-const navItems = ['Home', 'About', 'Skills', 'Projects', 'Education', 'Contact']
+const navItems = [
+  "Home",
+  "About",
+  "Skills",
+  "Projects",
+  "Education",
+  "Contact",
+];
 
 const Navbar = () => {
   return (
@@ -14,12 +20,15 @@ const Navbar = () => {
             <span className="text-2xl text-white">Mehedi</span>
           </div>
           <div className="flex space-x-16 text-lg text-white">
-            {
-              navItems.map((item) => <button className="cursor-pointer">{item}</button>)
-            }
+            {navItems.map((item) => (
+              <button className="cursor-pointer">{item}</button>
+            ))}
           </div>
           <div>
-            <Button icon={<AiOutlineDownload className="text-2xl" />} btnTitle="Resume" bg="bg-blue-100" />
+            <Button
+              btnTitle="Contact Me"
+              className="bg-blue-100"
+            />
           </div>
         </div>
       </div>
