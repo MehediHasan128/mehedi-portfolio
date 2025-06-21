@@ -1,10 +1,11 @@
 import Container from "../../components/container/Container";
+import HeaderContent from "../../components/ui/HeaderContent";
 
 const About = () => {
     return (
         <Container>
             <div>
-                <h1>This is about page</h1>
+                <HeaderContent />
             </div>
         </Container>
     );
