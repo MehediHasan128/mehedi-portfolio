@@ -5,6 +5,10 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiGithub, FiMail } from "react-icons/fi";
 
 const Home = () => {
+
+  const viewportHeight = window.innerHeight;
+  console.log(viewportHeight);
+
   return (
     <div className="relative bg-radial-[at_50%_55%] from-[#4f5764] via-[#21252B] to-[#21252B] to-100% min-h-screen">
       

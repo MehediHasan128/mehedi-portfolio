@@ -13,7 +13,7 @@ const navItems = [
 const Navbar = () => {
   return (
     <>
-      <div className="py-5 fixed w-full bg-[#21252B] z-100">
+      <div className="py-5 fixed w-full z-100 bg-[#21252b9c] backdrop-blur-md">
         <div className="w-[90%] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer">
             <img className="w-12" src={logo} alt="logo" />
