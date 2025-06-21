@@ -3,6 +3,9 @@ import HeaderContent from "../../components/ui/HeaderContent";
 import mehedi from "../../assets/images/3.jpg";
 import Button from "../../components/ui/Button";
 import { AiOutlineDownload } from "react-icons/ai";
+import { FiMail, FiPhone } from "react-icons/fi";
+import { GrLocation } from "react-icons/gr";
+import { BsCalendar2Day } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -36,6 +39,12 @@ const About = () => {
                 take on new challenges, collaborate with others, and grow as a
                 developer in this ever-evolving digital world.
               </p>
+              <div className="mb-20 grid grid-cols-2 gap-y-8">
+                <div className="flex items-center gap-2 text-lg"><FiMail className="text-2xl" /> <span>mehedihasanbaized@gmail.com</span></div>
+                <div className="flex items-center gap-2 text-lg"><FiPhone className="text-2xl" /> <span>+8801302557956</span></div>
+                <div className="flex items-center gap-2 text-lg"><GrLocation className="text-2xl" /> <span>Uttara Dhaka-1230, Bangladesh</span></div>
+                <div className="flex items-center gap-2 text-lg"><BsCalendar2Day className="text-2xl" /> <span>21 August, 2000</span></div>
+              </div>
               <Button
                 icon={<AiOutlineDownload className="text-2xl" />}
                 btnTitle="Resume"
