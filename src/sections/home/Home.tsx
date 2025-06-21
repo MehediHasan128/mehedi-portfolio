@@ -7,6 +7,7 @@ import { FiGithub, FiMail } from "react-icons/fi";
 const Home = () => {
   return (
     <div className="relative bg-radial-[at_50%_55%] from-[#4f5764] via-[#21252B] to-[#21252B] to-100% min-h-screen">
+      
       {/* Image */}
       <motion.div
         initial={{ y: 100, opacity: 0 }}
@@ -103,6 +104,7 @@ const Home = () => {
           </div>
         </div>
       </motion.div>
+
     </div>
   );
 };
