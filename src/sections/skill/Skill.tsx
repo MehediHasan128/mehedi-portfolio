@@ -14,10 +14,10 @@ import HeaderContent from "../../components/ui/HeaderContent";
 
 const Skill = () => {
   return (
-    <div id="skills" className="bg-gray-100 rounded-4xl">
+    <div id="skills" className="bg-[#1f2937]">
       <Container>
         <div>
-          <HeaderContent title1="CORE" title2="DEVELOPMENT SKILL" />
+          <HeaderContent title="CORE DEVELOPMENT SKILL" dark />
 
           <div className="flex justify-center items-center">
             

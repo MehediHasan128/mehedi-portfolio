@@ -9,12 +9,12 @@ import { BsCalendar2Day } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="about" className="bg-[#f0f0f0]">
       <Container>
         <div>
-          <HeaderContent title1="ABOUT" title2="ME" />
+          <HeaderContent title="ABOUT ME" />
 
-          <div className="flex flex-col xl:flex-row justify-center items-center gap-10 2xl:gap-0 my-10 md:my-16 xl:my-24">
+          <div className="flex flex-col xl:flex-row justify-center items-center gap-10 2xl:gap-0">
             <div className="xl:w-[50%]">
               <img
                 className="2xl:w-[85%] object-cover rounded-lg"
@@ -26,7 +26,7 @@ const About = () => {
               <h1 id="aboutTitle" className="text-5xl md:text-7xl font-bold">
                 So, who am I?
               </h1>
-              <p className="my-10 xl:my-16 2xl:my-20 md:text-xl xl:text-base text-justify text-gray-600">
+              <p className="my-10 xl:my-16 2xl:my-20 md:text-xl xl:text-lg text-justify text-gray-600">
                 I’m Mehedi Hasan Baized, a passionate and self-driven Full Stack
                 Developer with a strong interest in building modern, responsive,
                 and user-focused web applications. I specialize in both frontend
@@ -60,7 +60,7 @@ const About = () => {
                 <Button
                   icon={<AiOutlineDownload className="text-2xl" />}
                   btnTitle="Resume"
-                  className="bg-[#21252B] text-white"
+                  className="bg-[#11212d] text-white"
                 />
                 <Button
                   icon={<AiFillGithub className="text-2xl" />}
