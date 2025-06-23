@@ -9,24 +9,24 @@ import { BsCalendar2Day } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <Container>
         <div>
-          <HeaderContent />
+          <HeaderContent title1="ABOUT" title2="ME" />
 
-          <div className="flex justify-center items-center my-24">
-            <div className="w-[50%]">
+          <div className="flex flex-col xl:flex-row justify-center items-center gap-10 2xl:gap-0 my-10 md:my-16 xl:my-24">
+            <div className="xl:w-[50%]">
               <img
-                className="w-[80%] object-cover rounded-lg"
+                className="2xl:w-[85%] object-cover rounded-lg"
                 src={mehedi}
                 alt=""
               />
             </div>
-            <div className="w-[50%]">
-              <h1 id="aboutTitle" className="text-7xl font-bold">
+            <div className="xl:w-[50%]">
+              <h1 id="aboutTitle" className="text-5xl md:text-7xl font-bold">
                 So, who am I?
               </h1>
-              <p className="my-20 text-justify text-gray-600">
+              <p className="my-10 xl:my-16 2xl:my-20 md:text-xl xl:text-base text-justify text-gray-600">
                 I’m Mehedi Hasan Baized, a passionate and self-driven Full Stack
                 Developer with a strong interest in building modern, responsive,
                 and user-focused web applications. I specialize in both frontend
@@ -39,19 +39,19 @@ const About = () => {
                 take on new challenges, collaborate with others, and grow as a
                 developer in this ever-evolving digital world.
               </p>
-              <div className="mb-20 grid grid-cols-2 gap-y-8">
-                <div className="flex items-center gap-2 text-lg">
+              <div className="mb-10 xl:mb-16 2xl:mb-20 grid md:grid-cols-2 gap-y-3 xl:gap-y-5 xl:gap-x-9  2xl:gap-x-0 2xl:gap-y-8 w-full md:text-xl xl:text-base">
+                <div className="flex items-center gap-2">
                   <FiMail className="text-2xl" />{" "}
                   <span>mehedihasanbaized@gmail.com</span>
                 </div>
-                <div className="flex items-center gap-2 text-lg">
+                <div className="flex items-center gap-2">
                   <FiPhone className="text-2xl" /> <span>+8801302557956</span>
                 </div>
-                <div className="flex items-center gap-2 text-lg">
+                <div className="flex items-center gap-2">
                   <GrLocation className="text-2xl" />{" "}
                   <span>Uttara Dhaka-1230, Bangladesh</span>
                 </div>
-                <div className="flex items-center gap-2 text-lg">
+                <div className="flex items-center gap-2">
                   <BsCalendar2Day className="text-2xl" />{" "}
                   <span>21 August, 2000</span>
                 </div>

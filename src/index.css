@@ -12,6 +12,7 @@
 
 html {
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 
